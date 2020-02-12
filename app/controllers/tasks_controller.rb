@@ -6,9 +6,6 @@ class TasksController < ApplicationController
     @tasks = current_user.tasks
   end
 
-  def show
-  end
-
   def new
     @task = Task.new
   end
@@ -24,9 +21,6 @@ class TasksController < ApplicationController
       flash.now[:danger] = 'Task が登録されませんでした'
       render :new
     end
-  end
-
-  def edit
   end
 
   def update

@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'indexes/index'
-  get 'tasks/index'
   root to: 'tasks#index'
   get 'sessions/new'
   get 'sessions/create'
